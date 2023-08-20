@@ -1,0 +1,232 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Nosifer&display=swap" rel="stylesheet');
+
+:root {
+    --main-color: #000;
+    --second-color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.j-cont {
+    justify-content: space-between;
+}
+
+.a-items {
+    align-items: center;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1572px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+
+.header {
+    background-color: var(--main-color);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header__burger {
+    position: relative;
+    height: 25px;
+    width: 35.5px;
+    cursor: pointer;
+}
+
+.header__burger-line {
+    position: absolute;
+    background: var(--second-color);
+    height: 7px;
+    width: 35.5px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.header__burger-line::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    top: 3px;
+    right: 3px;
+}
+
+.header__burger-line:nth-child(2) {
+    top: 10px;
+}
+
+.header__burger-line:nth-child(3) {
+    top: 20px;
+}
+
+.header__logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.promo {
+    background-image: url(../img/bgc-main.webp);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px 0 440px 0;
+}
+
+.promo__head {
+    color: var(--second-color);
+    font-family: Montserrat Alternates;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* Эффект stroke (обводка текста) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--main-color);
+    /* Эффект inner shadow (тень внутри текста) */
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1); /* Здесь можно настроить параметры тени */
+}
+
+.promo__title {
+    margin-top: 40px;
+    color: var(--second-color);
+    font-family: Montserrat Alternates;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+     /* Эффект stroke (обводка текста) */
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: var(--main-color);
+     /* Эффект inner shadow (тень внутри текста) */
+     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1); /* Здесь можно настроить параметры тени */
+}
+
+.reader__head {
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    background: #000;
+    padding: 10px 14px;
+    color: var(--second-color);
+    font-family: Montserrat Alternates;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   /* Эффект stroke (обводка текста) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: var(--main-color);
+   /* Эффект inner shadow (тень внутри текста) */
+   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1); /* Здесь можно настроить параметры тени */    
+}
+
+.reader__cart-item {
+    margin-top: 55px;
+    margin-right: 2%;
+    margin-left: 2%;
+    max-width: 450px;
+    width: 100%;
+    transition: all .3s ease-in;
+}
+
+.reader__cart-item:hover {
+    transform: scale(1.05);
+}
+
+.reader__img {
+    max-width: 450px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+}
+.reader__author, .reader__pages {
+    margin-top: 20px;
+    color: var(--main-color);
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 450px;
+    word-wrap: break-word;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.reader__btn-link {
+    padding: 12px 40px;
+    background-color: #000;
+    color: var(--second-color);
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: all .3s ease-in;
+}
+
+.footer {
+    padding: 25px 0 0 20px;
+    margin-top: 100px;
+    background-color: var(--main-color);
+}
+
+.footer__created {
+    margin-top: 25px;
+    color: var(--second-color);
+    font-family: Nosifer;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer__logos {
+    margin-top: 15px;
+}
+
+.footer__logos a:nth-child(2) {
+    margin-left: 15px;
+}
+
+.mt110 {margin-top: 110px;}
+
+.footer__logos-img {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+
+
+
+
