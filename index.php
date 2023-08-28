@@ -48,6 +48,8 @@
         </div>
     </section>
 
+<!-- some footer -->
+
     <footer class="footer">
         <div class="container">
         <div class="header__logo">
